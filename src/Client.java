@@ -65,7 +65,7 @@ public class Client implements Runnable {
 			sum+=RTT[i];
 		}
 		double avg = sum/USERS;
-		System.out.println("Average Latence: "+ avg + " ms");
+		System.out.println("Average Latency: "+ avg + " ms");
 		
 	}
 
