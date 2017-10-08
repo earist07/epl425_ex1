@@ -70,7 +70,7 @@ public class Server {
 						double total_time = end_time-start_time;
 						System.out.println("Total time: " + total_time);
 						System.out.println("Throughput: " + messages/(total_time/1000) + " mes/sec");
-						double memoryUtil=1.0-Runtime.getRuntime().freeMemory()/Runtime.getRuntime().totalMemory();
+						double memoryUtil=1.0-(double) Runtime.getRuntime().freeMemory()/(double) Runtime.getRuntime().totalMemory();
 						System.out.println("Average Memory Utilization: "+memoryUtil);
 					}
 					output.flush();
