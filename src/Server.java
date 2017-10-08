@@ -55,7 +55,7 @@ public class Server {
 					Random num = new Random(System.nanoTime());
 					int n = num.nextInt(2000-300) + 300;
 					n*=1024;
-					System.out.println("Starting building a payload: "+ n/1024 + "KB");
+					System.out.println("Start building a payload: "+ n/1024 + "KB");
 					String payload = createPayload(n);
 				 	System.out.println("Payload created");
 					
